@@ -1,13 +1,31 @@
+/* default */
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
 }
 :root{
     --primary: #c8a97e;
     --secondary: #666666;
     --neutral: #666;
 }
-h1{
-    color: var(--primary)
+
+/* navbar */
+.navbar.myNav{
+    background: red !important;
+}
+/* hero */
+.hero{
+    height: 100%;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.5) url(assets/images/favicon.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+    /* margin-top: -58px; */
 }
