@@ -16,9 +16,20 @@ html, body{
 }
 
 /* navbar */
-.navbar.myNav{
-    background: red !important;
+.navbar.myActive {
+    background: var(--primary) !important;
+    transition: all 0.5s;
+    
 }
+.navbar{
+    background: transparent !important;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+
 /* hero */
 .hero{
     height: 100%;
@@ -27,5 +38,5 @@ html, body{
     background-size: cover;
     background-position: center center;
     background-blend-mode: overlay;
-    /* margin-top: -58px; */
+    margin-top: -58px;
 }
