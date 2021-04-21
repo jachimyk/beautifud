@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: #c8a97e;
+    --secondary: #666666;
+    --neutral: #666;
+}
+h1{
+    color: var(--primary)
+}
