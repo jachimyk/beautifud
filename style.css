@@ -32,13 +32,12 @@ topbar
   font-size: 15px;
   transition: all 0.5s;
   z-index: 1030;
-  color: rgba(255, 255, 255, 0.6);
   font-weight: 600;
 }
 
 #topbar .contact-info a {
   line-height: 1;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--primary);
   transition: 0.3s;
   padding-right: 10px;
 }
@@ -57,7 +56,7 @@ topbar
 }
 
 #topbar .social-links a {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--primary);
   padding-left: 15px;
   display: inline-block;
   line-height: 1px;
@@ -163,8 +162,7 @@ hero
 .hero {
   height: 100vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5) url(assets/images/background/bg-1.jpg)
-    no-repeat;
+  background: rgba(0, 0, 0, 0.5) url(assets/images/background/bg-8.jpg)no-repeat;
   background-size: cover;
   background-position: top center;
   background-blend-mode: overlay;
@@ -219,19 +217,20 @@ hero
     padding: 15px 0;
     background: #000 !important;
   }
+
   .navbar-brand {
     font-size: 28px;
     padding-left: 10px;
-  }
-  #navbarSupportedContent > ul > li {
-    display: block;
-    background: #000 !important;
   }
 
   /* Nav-link */
   .nav-link:hover,
   .nav-link.active {
     color: var(--primary);
+  }
+
+  .nav-link {
+      background: #000;
   }
 }
 
