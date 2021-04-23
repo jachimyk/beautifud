@@ -11,7 +11,7 @@
     <!-- Favicon and bootstrap icon -->
     <link
       rel="shortcut icon"
-      href="assets/images/favicon.png"
+      href="assets/images/burger.png"
       type="image/x-icon"
     />
     <link
@@ -51,7 +51,7 @@
     <!-- ==========navbar========== -->
     <nav class="navbar navbar-expand-md sticky-top">
       <div class="container-fluid-sm container-lg">
-        <a class="navbar-brand text-white" href="#">BEAUTIFUD</a>
+        <a class="navbar-brand text-white" href="#">BEAUTIFUD CUISINE</a>
 
         <span
           class="navbar-toggler"
@@ -70,31 +70,32 @@
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd" 
+              fill-rule="evenodd"
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5
-           5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+             5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
             />
           </svg>
         </span>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#index.html"
+              <a class="nav-link active" aria-current="page" href="./index.html"
                 >HOME</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#menu">MENU</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experts">EXPERTS</a>
+              <a class="nav-link" href="./About.html">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#special order">ORDER</a>
+              <a class="nav-link" href="./Menu.html">MENU</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Experts.html">EXPERTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTACT</a>
+              <a class="nav-link" href="./Order.html">ORDER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact.html">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -107,10 +108,10 @@
     >
       <div class="hero-wrap">
         <h1>Welcome to Beautifud</h1>
-        <p>serve your taste buds</p>
+        <p class="text-white text-center">serve your taste buds</p>
         <div>
-          <a href="#" type="button" class="btn me-1 hero-btn">Discover more</a>
-          <a href="#" type="button" class="btn ms-1 hero-btn">Place order</a>
+          <a href="#" type="button" class="btn me-1 fs-5 my-btn">Discover more</a>
+          <a href="#" type="button" class="btn ms-1 fs-5 my-btn">Place order</a>
         </div>
       </div>
     </div>
@@ -121,18 +122,9 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
-    ></script>
-    <script src="//bootstrap-extension.com/js/4.6.1/bootstrap-extension.min.js"></script>
-    <script>
-      const header = document.querySelector(".navbar");
-      window.onscroll = function () {
-        var top = window.scrollY;
-        if (top >= 50) {
-          header.classList.add("myActive");
-        } else {
-          header.classList.remove("myActive");
-        }
-      };
+    ></script> 
+    <!-- change on scroll -->
+    <script src="./main.js">
     </script>
   </body>
 </html>
