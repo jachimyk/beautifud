@@ -24,11 +24,11 @@ p {
   text-align: justify;
 }
 
-a{
+a {
   text-decoration: none !important;
 }
 
-a:hover{
+a:hover {
   text-decoration: none !important;
   color: #fff !important;
 }
@@ -36,21 +36,22 @@ a:hover{
 /*---------------------------------------------
 banner
 ---------------------------------------------- */
-.banner{
+.banner {
   height: 50vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5) url("./assets/images/background/bg-8.jpg")no-repeat;
+  background: rgba(0, 0, 0, 0.5) url("./assets/images/background/bg-8.jpg")
+    no-repeat;
   background-size: cover;
   background-position: top center;
   background-blend-mode: overlay;
 }
-.banner.banner-link{
+.banner.banner-link {
   font-weight: 600;
 }
-.banner a{
+.banner a {
   color: var(--primary);
 }
-.banner a:hover{
+.banner a:hover {
   color: inherit;
 }
 
@@ -133,7 +134,7 @@ navbar
   height: 55px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: #fff !important;
 }
 
@@ -162,7 +163,8 @@ hero
 .hero {
   height: 100vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5) url(assets/images/background/bg-8.jpg)no-repeat;
+  background: rgba(0, 0, 0, 0.5) url(assets/images/background/bg-8.jpg)
+    no-repeat;
   background-size: cover;
   background-position: top center;
   background-blend-mode: overlay;
@@ -175,11 +177,11 @@ hero
   font-weight: 500 !important;
 }
 
-.my-btn:hover{
-    background: transparent !important;
-    border: 1px solid var(--primary) !important;
-    transition: all 0.3s;
-    color: var(--primary) !important;
+.my-btn:hover {
+  background: transparent !important;
+  border: 1px solid var(--primary) !important;
+  transition: all 0.3s;
+  color: var(--primary) !important;
 }
 
 .hero .container {
@@ -198,24 +200,115 @@ hero
   letter-spacing: 0.7px;
 }
 
-
 /* ------------------------------------
 About page
 ------------------------------------ */
-.about-box{
+.about-box {
   border: 2px solid var(--primary);
+}
+
+/* --------------------------------
+Experts
+--------------------------------- */
+.team-area {
+  padding-top: 0% !important;
+  background: rgb(80, 75, 75);
+}
+
+.single-team {
+  background-color: #000;
+  margin-bottom: 10px;
+}
+
+.single-team:hover .social {
+  cursor: pointer;
+  opacity: 1;
+  transform: rotateY(0deg) scale(1, 1);
+}
+
+.img-area {
+  overflow: hidden;
+  position: relative !important;
+}
+
+.img-area img {
+  width: 100%;
+}
+
+.img-area:hover img {
+  transform: scale(1.2);
+}
+
+.img-area img {
+  transition: all 0.4s ease 0s;
+}
+
+.img-area .social {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute !important;
+  text-align: center !important;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.img-area .social ul {
+  text-align: center !important;
+  position: relative !important;
+  top: 175px;
+  display: flex;
+  justify-content: center;
+}
+.img-area .social ul li a {
+  border: 1px solid #fff;
+  color: #fff;
+  display: block !important;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center !important;
+}
+.img-area .social ul li{
+  padding-left: 5px !important;
+}
+.img-area .social ul li a:hover {
+  /* background: #fff;
+  color: #000 !important;
+  border: 1px solid transparent; */
+  background: #000;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary);
+}
+.img-text {
+  padding: 25px;
+  color: #fff;
+  text-align: center !important;
+}
+.img-text h4 {
+  margin: 0 0 5px;
+  font-size: 30px;
+  font-family: inherit;
+  letter-spacing: 5px;
+}
+.img-text h5 {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase !important;
 }
 
 /* --------------------------------
 footer
 -------------------------------- */
-footer a{
+footer a {
   color: #fff !important;
 }
 footer a:hover {
   color: var(--primary) !important;
 }
-
 
 /* ---------------------------------
 MEDIA QUERRY
@@ -254,8 +347,13 @@ MEDIA QUERRY
   }
 
   .nav-link {
-      background: #000;
-      width: 100%;
+    background: #000;
+    width: 100%;
+  }
+
+  /* expert */
+  .img-area img {
+    display: inline-block;
   }
 }
 
