@@ -7,3 +7,4 @@ window.onscroll = function () {
     header.classList.remove("myActive");
   }
 };
+
