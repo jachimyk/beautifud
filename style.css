@@ -212,12 +212,15 @@ Experts
 --------------------------------- */
 .team-area {
   padding-top: 0% !important;
-  background: rgb(80, 75, 75);
 }
 
 .single-team {
-  background-color: #000;
   margin-bottom: 10px;
+}
+
+.single-team:hover{
+  background: #fff;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 .single-team:hover .social {
@@ -233,6 +236,7 @@ Experts
 
 .img-area img {
   width: 100%;
+  height: 400px;
 }
 
 .img-area:hover img {
@@ -255,6 +259,7 @@ Experts
   transition: 0.5s;
   transform: rotateY(180deg) scale(0.5, 0.5);
 }
+
 .img-area .social ul {
   text-align: center !important;
   position: relative !important;
@@ -262,6 +267,7 @@ Experts
   display: flex;
   justify-content: center;
 }
+
 .img-area .social ul li a {
   border: 1px solid #fff;
   color: #fff;
@@ -272,9 +278,11 @@ Experts
   line-height: 40px;
   text-align: center !important;
 }
+
 .img-area .social ul li{
   padding-left: 5px !important;
 }
+
 .img-area .social ul li a:hover {
   /* background: #fff;
   color: #000 !important;
@@ -284,20 +292,63 @@ Experts
   border: 1px solid var(--primary);
 }
 .img-text {
-  padding: 25px;
-  color: #fff;
+  padding: 20px;
   text-align: center !important;
 }
 .img-text h4 {
-  margin: 0 0 5px;
-  font-size: 30px;
-  font-family: inherit;
-  letter-spacing: 5px;
+  font-size: 19px;
+  color: var(--primary);
+  letter-spacing: .9px;
+  font-weight: 600;
 }
 .img-text h5 {
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 15px;
+  padding-top: 8px;
   text-transform: uppercase !important;
+}
+
+/* -----------------------------------
+contact
+---------------------------------- */
+.icon-wrap{
+  background: var(--primary);
+  height: 40px;
+  width: 40px;
+  color: #fff;
+}
+
+.icon-wrap span{
+  font-weight: 500;
+}
+
+/* -------------------------
+service page
+----------------------- */
+.s-wrapper{
+  border: 2px dotted var(--primary);
+  padding: 10px;
+}
+
+.s-wrapper .s-icon{
+  height: 70px;
+  width: 70px;
+  margin: 10px 0;
+  color: var(--primary);
+}
+
+.s-wrapper h3{
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.s-wrapper:hover{
+  background: var(--primary);
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.s-wrapper:hover .s-icon, .s-wrapper:hover p{
+  color: #fff;
 }
 
 /* --------------------------------
