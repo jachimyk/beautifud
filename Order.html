@@ -94,7 +94,7 @@
         class="h-100 d-flex justify-content-center align-items-center text-white text-center"
       >
         <div>
-          <h3 class="fs-2 fw-bold">Special Order</h3>
+          <h3 class="fs-2 fw-bold">Place An Order</h3>
           <div class="fs-6 banner-link">
             <a href="./index.html" class="text-decoration-none">Home</a> /
             <span>Order</span>
@@ -103,7 +103,64 @@
       </div>
     </header>
 
-    <div style="margin-top: 5em; margin-bottom: 5em"></div>
+<div class="bg-light">
+    <div class="container py-5">
+      <div class="d-flex justify-content-center">
+        <div class="form-wrapper d-flex justify-content-center">
+          <form class="bg-light border border-4 rounded">
+            <div class="text-center mb-3 bg-dark py-3 text-white">
+              <h3 class="mb-0"> i want to make an order</h3>
+              <span class="">at beautifud</span>
+            </div>
+
+            
+            <div class="px-4 pb-4">
+              <div class="row">
+                <div class="col-lg-6 mb-3">
+                  <input type="text" onfocus="(this.type='date')" id="date" class="form-control" placeholder="date">
+                </div>
+  
+                <div class="col-lg-6 mb-3">
+                  <input type="text" onfocus="(this.type='time')" id="time" class="form-control" placeholder="time">
+                </div>
+  
+  
+                <div class="col-lg-6">
+                  <select name="food" id="food" class="form-control">
+                    <option>select food</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </div>
+  
+                <div class="col-lg-6">
+                  <select name="food" id="food" class="form-control">
+                    <option>select food quantity</option>
+                    <option value="1 plate">1 plate</option>
+                    <option value="2">2 &#x2713;</option>
+                    <option value="3">3 &#x2713;</option>
+                  </select>
+                </div>
+              </div>
+              <hr/>
+  
+                <input type="text" name="full name" placeholder="Full Name" class="form-control mb-3">
+                <input type="email" name="email" placeholder="Enter Email" class="form-control mb-3">
+                <input type="tel" name="phone" placeholder="Enter Phone" class="form-control mb-3">
+                <textarea name="" id="InputMessage" class="form-control mb-3" rows="5" placeholder="enter message if any"></textarea>
+                <div class="d-flex justify-content-center mt-4">
+                  <button type="submit" class="btn my-btn w-100">Submit</button>
+                </div>
+            </div>
+        
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+
 
     <!-- ==========footer========== -->
     <footer class="bg-dark text-white pt-5 pb-3">

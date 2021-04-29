@@ -33,14 +33,18 @@ a:hover {
   color: #fff !important;
 }
 
+textarea{
+  resize: none !important;
+}
+
+
 /*---------------------------------------------
 banner
 ---------------------------------------------- */
 .banner {
   height: 50vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5) url("./assets/images/background/bg-8.jpg")
-    no-repeat;
+  background: rgba(0, 0, 0, 0.5) url("./assets/images/background/bg-8.jpg")no-repeat;
   background-size: cover;
   background-position: top center;
   background-blend-mode: overlay;
@@ -163,7 +167,7 @@ hero
 .hero {
   height: 100vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5) url(assets/images/background/bg-8.jpg)
+  background: rgba(0, 0, 0, 0.5) url(./assets/images/background/bg-11.jpg)
     no-repeat;
   background-size: cover;
   background-position: top center;
@@ -206,6 +210,47 @@ About page
 .about-box {
   border: 2px solid var(--primary);
 }
+
+/* ---------------------------------
+MENU page
+-------------------------------- */
+
+.column1{
+  float: left;
+  display: none; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+
+.show {
+  display: block;
+}
+
+
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: transparent !important;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+}
+
+
 
 /* --------------------------------
 Experts
@@ -305,6 +350,19 @@ Experts
   font-size: 15px;
   padding-top: 8px;
   text-transform: uppercase !important;
+}
+
+/* ---------------------------------
+order
+---------------------------------- */
+.form-wrapper{
+  background: var(--primary);
+  max-width: 560px;
+  padding: 25px 0;
+}
+
+.form-wrapper form{
+  width: 90%;
 }
 
 /* -----------------------------------
